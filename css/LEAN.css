@@ -1,0 +1,463 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f1fcf5;
+    /*background: url(..\\image\\background.jpg);*/
+}
+
+/*头部导航*/
+#head {
+    height: 60px;
+    width: 100%;
+    background-color: #d2e5c2;
+    position: fixed;
+    top: 0;
+}
+
+#head img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    /*clear: both;*/
+    float: left;
+    border-radius: 25px;
+}
+
+#logo span {
+    font-family: "宋体";
+    font-size: 40px;
+    color: #ff83ae;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+
+ul {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+
+#header li {
+    float: left;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header li a {
+    width: 100px;
+    height: 60px;
+    display: block;
+}
+
+#header a:link, a:visited {
+    color: #fff;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#header a:hover, a:active {
+    color: #c99;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #59d8d2;
+}
+
+#header .on {
+    color: #c99;
+    font-weight: bold;
+    background-color: #59d8d2;
+    /*background: url("");*/
+}
+
+/*登录按钮*/
+#login-btn {
+    float: right;
+    border: none;
+    background-color: #d2e5c2;
+    width: 100px;
+    height: 60px;
+    margin-right: 30px;
+    margin-top: 0;
+}
+
+#login-btn span {
+    font-family: "宋体";
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+}
+
+#login-btn span:hover {
+    color: #c99;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #59d8d2;
+}
+
+/*登录框*/
+#loginframe {
+    display: none;
+    width: 500px;
+    height: 400px;
+    /*border: 1px solid #000000;*/
+    background-color: #ffdaed;
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    z-index: 1000;
+}
+
+#logintop {
+    width: 150px;
+    height: 60px;
+    margin: 10px auto;
+    font-family: "宋体";
+    font-size: 40px;
+    color: #ff83ae;
+    text-align: center;
+}
+
+#logintop img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+#logintop i {
+    line-height: 60px;
+}
+
+#logintop #close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.loginimg {
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loginimg a{
+    display: inline-block;
+}
+
+.loginimg img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff4d5d;
+    border-radius: 20px;
+}
+#loginframe .logincontent {
+    width: 500px;
+    height: 40px;
+    text-align: center;
+}
+
+#loginframe .logincontent span {
+    font-family: "宋体";
+    font-size:22px;
+    color: #000;
+    line-height: 40px;
+}
+
+#user input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 2px auto;
+    font-size: 15px;
+}
+
+#checkbox {
+    width:300px;
+    height: 20px;
+    margin:10px auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+#login-btn1 {
+    display: block;
+    margin:0 auto;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#login-btn1:hover {
+    color: #c99;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #67ed99;
+}
+
+#loginbottom{
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#loginbottom .forget a {
+    color: #ff4d5d;
+    font-size: 15px;
+    float: left;
+    line-height: 30px;
+}
+
+#loginbottom .register a {
+    color: #ff4d5d;
+    font-size: 15px;
+    float: right;
+    line-height: 30px;
+}
+
+#loginbottom .register span {
+    font-size: 15px;
+    color: #000;
+    float: right;
+    line-height: 30px;
+}
+
+/*首页*/
+#homepage {
+    /*display: none;*/
+    width: 800px;
+    margin: 70px auto;
+}
+
+#homepage .content {
+    margin: 20px;
+}
+
+#homepage .content img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#homepage .content p {
+    text-indent: 2em;
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+#homepage .content span {
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+/*我的主页*/
+#mypage {
+    display: none;
+    width: 800px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+#mypage .content {
+    margin: 40px;
+}
+
+#mypage .content img {
+    display: block;
+    margin: 0 auto;
+}
+
+#mypage .content h3 {
+    font-size: 30px;
+}
+
+#mypage .content span {
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+#mypage .content p {
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+/*聊天*/
+#chat {
+    display: none;
+    width: 1000px;
+    margin: 70px auto;
+}
+
+#chat img {
+    width: 280px;
+    height: 280px;
+    border: 5px solid #ffe9bf;
+    border-radius: 10px;
+}
+
+#chat h3 {
+    font-size: 25px;
+}
+
+#chat li {
+    float: left;
+    margin: 10px;
+}
+
+#chat a:link, a:visited {
+    color: black;
+    font-size: 20px;
+}
+
+#chat a:hover, a:active {
+    color: #c99;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*新闻*/
+#news {
+    display: none;
+    clear: both;
+    width: 800px;
+    margin:70px auto;
+}
+
+#news .content{
+    width: 800px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#news .content img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+#news .content .brief{
+    width:550px;
+    height: 200px;
+    float: right;
+    font-family:"宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+#news .content .brief a:link, a:visited {
+    color: black;
+}
+
+#news .content .brief a:hover, a:active {
+    color: #c99;
+}
+
+table td{
+    height: 200px;
+}
+
+
+/*视频*/
+#video {
+    display: none;
+    clear: both;
+    width: 800px;
+    margin: 70px auto;
+}
+
+#video .content {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*心情*/
+#mood {
+    display: none;
+}
+
+#mood .content {
+    width: 800px;
+    margin: 70px auto;
+}
+
+#mood .content img {
+    display: block;
+    margin: 0 auto;
+}
+
+#mood .content audio {
+    display: block;
+    margin: 0 auto;
+}
+
+#mood .content h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/*#mood .content span{*/
+/*font-family: "Microsoft Yahei";*/
+/*font-size: 18px;*/
+/*text-align: center;*/
+/*}*/
+
+#mood .content span {
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+#mood .content p {
+    font-family: "宋体";
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/*返回顶部*/
+#backtop {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: 520px;
+    bottom: 30px;
+    background: url(..\\image\\backtop.png) no-repeat;
+}
+
+#backtop:hover {
+    background: url(..\\image\\backtop.png) no-repeat 0 -40px;
+}
+
