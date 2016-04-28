@@ -5,7 +5,6 @@
 
 body {
     background-color: #f1fcf5;
-    /*background: url(..\\image\\background.jpg);*/
 }
 
 /*头部导航*/
@@ -15,6 +14,7 @@ body {
     background-color: #d2e5c2;
     position: fixed;
     top: 0;
+    z-index: 100;
 }
 
 #head img {
@@ -60,7 +60,7 @@ a{
 }
 
 #header a:link, a:visited {
-    color: #fff;
+    color: #000;
     font-size: 20px;
     height: 60px;
     line-height: 60px;
@@ -81,7 +81,6 @@ a{
     color: #c99;
     font-weight: bold;
     background-color: #59d8d2;
-    /*background: url("");*/
 }
 
 /*登录按钮*/
@@ -113,6 +112,16 @@ a{
     background-color: #59d8d2;
 }
 
+/*遮罩层*/
+#mask{
+    display: none;
+    background: #000;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    width: 100%;
+    height: 1000px;
+}
+
 /*登录框*/
 #loginframe {
     display: none;
@@ -123,7 +132,6 @@ a{
     position: fixed;
     left: 30%;
     top: 20%;
-    z-index: 1000;
 }
 
 #logintop {
@@ -249,6 +257,28 @@ a{
     /*display: none;*/
     width: 800px;
     margin: 70px auto;
+    position: relative;
+    z-index: 20;
+}
+
+#picBox {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+#picBox .loading{
+    font-size: 20px;
+}
+
+#picBox .loading img{
+    width: 400px;
+    height:150px;
+}
+
+#picBox img{
+    width: 800px;
+    height: 500px;
 }
 
 #homepage .content {
@@ -292,6 +322,13 @@ a{
 #mypage .content img {
     display: block;
     margin: 0 auto;
+}
+
+#mypage .content audio {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height:40px;
 }
 
 #mypage .content h3 {
@@ -417,18 +454,14 @@ table td{
 #mood .content audio {
     display: block;
     margin: 0 auto;
+    width: 400px;
+    height:40px;
 }
 
 #mood .content h3 {
     font-size: 30px;
     text-align: center;
 }
-
-/*#mood .content span{*/
-/*font-family: "Microsoft Yahei";*/
-/*font-size: 18px;*/
-/*text-align: center;*/
-/*}*/
 
 #mood .content span {
     font-family: "宋体";

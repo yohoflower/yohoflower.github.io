@@ -33,10 +33,11 @@ window.onload = function () {
     var oBtn = document.getElementById("login-btn");
     oBtn.onclick = function () {
         var oLoginframe = document.getElementById("loginframe");
-        oLoginframe.style.display = "block";
+        var oMask = document.getElementById("mask");
+        oLoginframe.style.display = oMask.style.display = "block";
         var oClose = document.getElementById("close");
-        oClose.onclick = function () {
-            oLoginframe.style.display = "none";
+        oClose.onclick = oMask.onclick = function () {
+            oLoginframe.style.display = oMask.style.display = "none";
         }
     }
 
@@ -62,6 +63,12 @@ window.onload = function () {
             this.value = '密码';
         }
     }
+
+
+    //显示焦点图
+   myFocus.set({
+       id:"picBox"
+   })
 
 
     //返回顶部
