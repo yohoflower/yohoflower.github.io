@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #c8c495;
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    background: #ff9490;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#header i{
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 60px;
+    float: left;
+    padding-left: 40px;
+}
+
+#header ul{
+    list-style: none;
+    margin-left: 100px;
+    float: left;
+}
+
+#header ul li{
+    float: left;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+
+}
+
+#header a{
+    text-decoration: none;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+#header a:link,a:visited{
+    color: #000;
+    font-size: 30px;
+}
+
+#header a:hover,a:active{
+    color: #3b84ff;
+    background-color: #ffdb80;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#header .on{
+    color:#3b84ff;
+    background-color: #ffdb80;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+#contain{
+    width:1200px;
+    height: 100%;
+    margin: 80px auto;
+    position: relative;
+    z-index: 1;
+}
+
+#pet{
+    /*display: none;*/
+}
+
+#pet img{
+    padding: 15px;
+    border: 1px solid #54addd;
+    background: #fff;
+    position: absolute;
+    transition: 1s;
+    z-index: 1;
+}
+#pet img:hover{
+    transform:rotate(0deg);
+    transform: scale(1.5);
+    box-shadow: 10px 10px 15px #8a8a8a;
+    z-index: 2;
+}
+#pet .pic1{
+    top: 200px;
+    left:0px;
+    transform:rotate(-15deg);
+}
+#pet .pic2{
+    top: 10px;
+    left: 100px;
+    transform:rotate(25deg);
+}
+#pet .pic3{
+    top: 400px;
+    left: 100px;
+    transform:rotate(-5deg);
+}
+#pet .pic4{
+    top: 20px;
+    left:800px;
+    transform:rotate(35deg);
+}
+#pet .pic5{
+    top:50px;
+    left: 450px;
+    transform:rotate(-25deg);
+}
+#pet .pic6{
+    top: 350px;
+    left: 400px;
+    transform:rotate(35deg);
+}
+#pet .pic7{
+    top: 200px;
+    left: 800px;
+    transform:rotate(-5deg);
+}
+
+#qvtu{
+    display: none;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#qvtu .content{
+    padding: 20px;
+}
+#qvtu .content h2{
+    padding-bottom: 20px;
+}
+/*#qvtu .pic{*/
+    /*width: 100%;*/
+    /*height:800px;*/
+
+/*}*/
+#qvtu .pic img{
+    width: 200px;
+    height:200px;
+    float: left;
+    margin: 20px;
+
+}
