@@ -71,7 +71,7 @@ window.onload = function () {
    })
 
 
-    //返回顶部
+    //回到顶部
     var obacktop = document.getElementById("backtop");
     //获取页面可视区域的高度
     var clientHeight = document.documentElement.clientHeight;
