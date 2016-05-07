@@ -312,7 +312,7 @@ body{
 
 #music .content a:hover,a:active{
     -moz-opacity: 1;
-    -khtml-opacity: 0.5;
+    -khtml-opacity: 1;
     opacity:1;
     filter: alpha(opacity=100);
 }
