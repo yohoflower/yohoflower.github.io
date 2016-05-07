@@ -155,6 +155,9 @@ window.onload = function () {
 
 function myFunction(ob) {
     var audio=ob;
-    audio.src=$(audio).attr("data-src");
-    audio.play();
+    if(""==audio.src){
+        audio.src=$(audio).attr("data-src");
+        audio.play();
+    }
+
 }
