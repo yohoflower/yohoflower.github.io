@@ -70,6 +70,7 @@ window.onload = function () {
 
     //图片Lazy Load
     $(function () {
+
         $("#qvtu img").lazyload({
             effect: "fadeIn"
         });
