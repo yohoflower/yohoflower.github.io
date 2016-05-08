@@ -67,8 +67,62 @@ window.onload = function () {
         }, 30);
     }
 
+    //视频播放列表
+    var videoList = [
+        {
+            title: "papi酱的明星系列视频—《明撕ing面对面》",
+            src: "http://player.youku.com/player.php/sid/XMTU1NDU5ODY5Ng==/v.swf"
+        },
+        {
+            title: "papi酱的吐槽系列—生活中那些令人一言难尽的事 ",
+            src: "http://player.youku.com/player.php/sid/XMTU0NzA3OTU1Mg==/v.swf"
+        },
+        {
+            title: "papi酱—一个人的减肥全过程 ",
+            src: "http://player.youku.com/player.php/sid/XMTUzOTQxOTg2MA==/v.swf"
+        },
+        {
+            title: "papi酱纪念莎士比亚400周年特别视频",
+            src: "http://player.youku.com/player.php/sid/XMTU0NTc0NTM3Ng==/v.swf"
+        },
+        {
+            title: "papi酱：我被人家抓住了小辫子，我改就是了",
+            src: "http://player.youku.com/player.php/sid/XMTU0NTE0OTkxNg==/v.swf"
+        },
+        {
+            title: "SHE《天亮了》",
+            src: "http://player.youku.com/player.php/sid/XMjc1NDU3MTky/v.swf"
+        },
+        {
+            title: "李荣浩《李白》",
+            src: "http://player.youku.com/player.php/sid/XMTI1OTgxODE5Mg==/v.swf"
+        }
+    ];
 
-    //生成播放列表
+    var oVideo = document.getElementById("video");
+    playVideo();
+
+    function playVideo() {
+        var html = '', v;
+        for (var i = 0; i < videoList.length; i++) {
+            v = videoList[i];
+            html += '<div class="content"><h2>' + v.title + '</h2>' +
+                '<div class="video"><embed type="application/x-shockwave-flash" allowscriptaccess="always" allowFullScreen="true"' +
+                'align="middle" quality="high" height="400" width="480" src="' + v.src + '" /></div>' +
+                '<hr>' +
+                '<div class="bottom"><a href="javascript:;" title="分享到QQ空间"><img src="image/qq.png"></a>' +
+                '<a href="javascript:;" title="分享到新浪微博"><img src="image/weibo.png"></a>' +
+                '<a href="javascript:;" title="分享到微信朋友圈"><img src="image/weixin.jpg"></a>' +
+                '<a href="javascript:;" title="分享到人人网"><img src="image/renren.jpg"></a>' +
+                '<a href="javascript:;" title="赞"><img class="zan" src="image/zan.jpg"></a></div>' +
+                '</div>'
+
+            oVideo.innerHTML = html;
+        }
+    }
+
+
+    //音乐播放列表
     // the playlist is just a JSON-style object.
     var playList = [
         {
@@ -126,14 +180,9 @@ window.onload = function () {
     ];
 
     var musiclist = document.getElementById("music-list");
-    //var musicli = document.createElement("li");
-    //
-    //musiclist.appendChild(musicli);
-
     initList();
 
-    //生成listhtml
-
+    //初始化歌曲列表
     function initList() {
         var html = '', s;
         for (var i = 0; i < playList.length; i++) {
@@ -141,19 +190,19 @@ window.onload = function () {
             html += '<li><span>' + s.title + '</span>' +
                 '<a href="javascript:;" title="下载"><img src="image/download.png" ></a>' +
                 '<a href="javascript:;" title="收藏"><img src="image/xihun.png" ></a>' +
-                '<a href="javascript:;" title="播放"><audio controls class="player_audio"  onplay="myFunction(this)" data-src="' + s.src + '"  ></audio></a>' +
+                '<a href="javascript:;" title="播放"><audio controls class="player_audio"  onplay="myFunction(this)" music-src="' + s.src + '"  ></audio></a>' +
                 '</li>';
         }
-        //songListHeight = len * 40;
         musiclist.innerHTML = html;
     }
+
+
 }
 
 function myFunction(ob) {
     var audio = ob;
     if ("" == audio.src) {
-        audio.src = $(audio).attr("data-src");
+        audio.src = audio.getAttribute("music-src");
     }
     audio.play();
-
 }
