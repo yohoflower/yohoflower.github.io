@@ -158,8 +158,10 @@ body{
 
 #qvtu .content9{
     background-color: #fff;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
+    clear: both;
+    float: left;
 }
 
 #qvtu  h2{
@@ -167,7 +169,9 @@ body{
 }
 
 #qvtu .content9 .pic{
+    float: left;
     margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 #qvtu .content9 .pic img{
@@ -180,12 +184,15 @@ body{
 }
 
 #qvtu  hr{
-    width: 90%;
-    margin: 0 auto;
+    width: 700px;
+    float: left;
+    margin-left: 30px;
+
 }
 
 #qvtu .bottom{
     padding-left: 30px;
+    clear: both;
 }
 
 #qvtu .bottom img{
@@ -203,13 +210,15 @@ body{
 
 #qvtu .content1{
     background-color: #fff;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
+    clear: both;
+    float: left;
 }
 
 #qvtu .content1 .pic{
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 /*视频*/
@@ -258,6 +267,7 @@ body{
 /*音乐*/
 #music{
     display: none;
+    font-family: "Microsoft YaHei";
 }
 
 #music .content{

@@ -95,16 +95,16 @@ window.onload = function () {
             src: "http://player.youku.com/player.php/sid/XMTU0NTc0NTM3Ng==/v.swf"
         },
         {
-            title: "papi酱：我被人家抓住了小辫子，我改就是了",
-            src: "http://player.youku.com/player.php/sid/XMTU0NTE0OTkxNg==/v.swf"
+            title: "SHE《你曾是少年》",
+            src: "http://player.youku.com/player.php/sid/XOTU5ODIwNzcy/v.swf"
         },
         {
-            title: "SHE《天亮了》",
-            src: "http://player.youku.com/player.php/sid/XMjc1NDU3MTky/v.swf"
+            title: "SHE《安静了》",
+            src: "http://player.youku.com/player.php/sid/XNzA0ODY5NzQ4/v.swf"
         },
         {
             title: "李荣浩《李白》",
-            src: "http://player.youku.com/player.php/sid/XMTI1OTgxODE5Mg==/v.swf"
+            src: "http://player.youku.com/player.php/sid/XODYxMjAxMDA0/v.swf"
         }
     ];
 
