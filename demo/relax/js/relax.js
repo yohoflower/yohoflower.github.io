@@ -69,11 +69,11 @@ window.onload = function () {
 
 
     //图片Lazy Load
-    $("#qvtu img").lazyload({
-        effect : "fadeIn"
-    })
-
-
+    $(function () {
+        $("#qvtu img").lazyload({
+            effect: "fadeIn"
+        });
+    });
 
 
     //视频播放列表
