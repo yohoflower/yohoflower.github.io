@@ -67,6 +67,15 @@ window.onload = function () {
         }, 30);
     }
 
+
+    //图片Lazy Load
+    $("#qvtu img").lazyload({
+        effect : "fadeIn"
+    })
+
+
+
+
     //视频播放列表
     var videoList = [
         {
@@ -206,3 +215,9 @@ function myFunction(ob) {
     }
     audio.play();
 }
+
+
+//$(document).ready(function(){
+//
+//});
+
