@@ -16,9 +16,8 @@ body{
     z-index: 2;
 }
 
-#header i{
+#header em{
     font-size: 50px;
-    font-weight: bolder;
     line-height: 60px;
     float: left;
     padding-left: 40px;
@@ -35,7 +34,6 @@ body{
     width: 160px;
     height: 60px;
     text-align: center;
-
 }
 
 #header a{

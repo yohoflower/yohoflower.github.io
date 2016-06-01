@@ -39,6 +39,7 @@ window.onload = function () {
 
     //滚动条滚动时触发
     window.onscroll = function () {
+        //获取滚动条距离顶部的高度
         var oTop = document.documentElement.scrollTop || document.body.scrollTop;
 
         if (oTop >= clientHeight) {
@@ -126,9 +127,8 @@ window.onload = function () {
                 '<a href="javascript:;" title="分享到人人网"><img src="image/renren.jpg"></a>' +
                 '<a href="javascript:;" title="赞"><img class="zan" src="image/zan.jpg"></a></div>' +
                 '</div>'
-
-            oVideo.innerHTML = html;
         }
+        oVideo.innerHTML = html;
     }
 
 
@@ -209,8 +209,8 @@ window.onload = function () {
 
 }
 
-function myFunction(ob) {
-    var audio = ob;
+function myFunction(obj) {
+    var audio = obj;
     if ("" == audio.src) {
         audio.src = audio.getAttribute("music-src");
     }
@@ -218,7 +218,4 @@ function myFunction(ob) {
 }
 
 
-//$(document).ready(function(){
-//
-//});
 
