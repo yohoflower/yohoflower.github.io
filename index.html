@@ -1,27 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>yohoflower</title>
-    <link rel="stylesheet" type="text/css" href="home/css/yohoflower.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网站主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <style>
+        body {
+            background-color: #75abdd;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        #left img{
+            margin: 10px;
+            width: 40%;
+            height: 40%;
+        }
+        #right{
+            border-left: 1px solid #ccc;
+            margin-left: 0;
+            padding-left: 50px;
+        }
+        .projects img{
+            width: 65px;
+            height: 65px;
+        }
+        .projects span{
+            font-size: 28px;
+        }
+        @media (max-width: 768px) {
+            #left img{
+                margin: 10px;
+            }
+            #right{
+                border-top: 1px solid #ccc;
+                margin-top: 50px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div id="top">
-    <h1>Yohoflower</h1>
-    <audio src="home/正义之手.mp3" controls></audio>
+<div class="container">
+    <div class="page-header">
+        <h1><strong>Yohoflower</strong>
+            <small> personal website</small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 " id="left">
+            <h2>联系方式：</h2>
+            <address><h3>邮箱：<a href="mailto:3109108399@qq.com" target="_blank">3109108399@qq.com</a></h3></address>
+            <img src="home/images/myqq.png" class="img-rounded" >
+            <img src="home/images/myweixin.png" class="img-rounded">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 projects" id="right">
+            <h2>我的项目：</h2>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/resume/" target="_blank"><span>个人简历</span></a><br>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/test4/" target="_blank"><span>test4(尚未完成)</span></a><br>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/test3/" target="_blank"><span>test3</span></a><br>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/test2/" target="_blank"><span>test2</span></a><br>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/test1/" target="_blank"><span>test1</span></a><br>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/relax/" target="_blank"><span>Relax</span></a><br>
+            <img src="home/images/jiantou.png">
+            <a href="http://yohoflower.github.io/demo/lean/" target="_blank"><span>LEAN</span></a>
+        </div>
+    </div>
 </div>
-<div id="introduce">
-    <address>my email address：<a href="mailto:3109108399@qq.com" target="_blank">3109108399@qq.com</a></address>
-    <img src="home/img/myqq.jpg">
-    <img src="home/img/myweixin.jpg">
-</div>
-<div id="projects">
-    <h1>my projects</h1>
-    <img src="home/img/jiantou.png"><a href="http://yohoflower.github.io/demo/test3/" target="_blank">test3</a><br>
-    <img src="home/img/jiantou.png"><a href="http://yohoflower.github.io/demo/test2/" target="_blank">test2</a><br>
-    <img src="home/img/jiantou.png"><a href="http://yohoflower.github.io/demo/test1/" target="_blank">test1</a><br>
-    <img src="home/img/jiantou.png"><a href="http://yohoflower.github.io/demo/relax/" target="_blank">Relax</a><br>
-    <img src="home/img/jiantou.png"><a href="http://yohoflower.github.io/demo/lean/" target="_blank">LEAN</a>
-</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
