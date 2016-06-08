@@ -106,7 +106,7 @@ body {
 }
 
 .mainnav .container .leftnavlist {
-  display: none;
+  /*display: none;*/
   position: absolute;
   z-index: 2;
   background-color: #6c93c9;
@@ -124,17 +124,12 @@ body {
   width: 50%;
 }
 
-.mainnav .container .on {
+.mainnav .container .navbar-nav .on {
   background-color: #5a79a9;
-  float: left;
 }
 
-.mainnav .container .on a {
-  display: block;
-  line-height: 20px;
+.mainnav .container .navbar-nav .on a {
   color: #000;
-  padding: 15px;
-  text-decoration: none;
 }
 
 .mainnav .container .navbar-nav li:hover, li:active {
@@ -143,10 +138,10 @@ body {
 
 .mainnav .container .navbar-nav a {
   font-family: "Microsoft YaHei";
-  color: #000;
+  color: #6b6b6b;
   font-size: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
+  /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
 }
 
 #carousel-example-generic .carousel-inner img {
@@ -553,15 +548,14 @@ body {
 }
 .tell .header .title{
   float: left;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 40px;
 }
 .tell .header img{
-  margin-left: 35px;
+  margin-left: 25px;
   margin-top: 12px;
   float:left;
-  width: 40%;
 }
 .tell .header a{
   line-height: 40px;
@@ -578,23 +572,15 @@ body {
 }
 .tell .list ul li .glyphicon{
   color: #5e73bc;
-  float: left;
 }
 .tell .list ul li a{
   margin-left: 8px;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  float: left;
-  width: 60%;
 }
 .tell a:hover{
   color: #5e73bc;
 }
 .tell .list .data{
   float: right;
-  width: 33%;
 }
 .tell .list1 ul{
   list-style: none;
@@ -617,7 +603,7 @@ body {
   background-color: #424242;
   position: fixed;
   bottom: 0;
-  height: 10%;
+  height: 50px;
   width: 100%;
   padding: 0;
   z-index: 100;
@@ -663,75 +649,15 @@ body {
   .topnav, .leftnav,.notice {
     display: none;
   }
-  #carousel-example-generic .carousel-inner img {
-    height: 300px;
-  }
-
-  #carousel-example-generic .left .glyphicon-chevron-left {
-    margin-left:0;
-  }
-
-  #carousel-example-generic .right .glyphicon-chevron-right {
-    margin-right: 0;
-  }
   .container-fluid .sevlist dl {
     width: 50%;
-  }
-  .footer-fixed img{
-     display: none;
   }
 }
 @media (max-width: 992px)and (min-width:768px)  {
   .topnav, .leftnav,.notice {
     display: none;
   }
-  .mainnav .container .navbar-nav a{
-    margin: 0;
-    padding-left:10px;
-    padding-right:10px;
-  }
-  #carousel-example-generic .carousel-inner img {
-    height: 400px;
-  }
-
-  #carousel-example-generic .left .glyphicon-chevron-left {
-    margin-left:0;
-  }
-
-  #carousel-example-generic .right .glyphicon-chevron-right {
-    margin-right: 0;
-  }
-  .secondimg{
-    display: none;
-  }
   .container-fluid .sevlist dl {
     width: 30%;
-
   }
 }
-@media (min-width:992px) and (max-width:1200px) {
-  .secondimg{
-    display: none;
-  }
-  .tell{
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .tell .header .title{
-    font-size: 15px;
-  }
-  .tell .header img{
-    margin-left: 20px;
-    width: 120px;
-  }
-  .tell .list ul li a{
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .tell .list .data{
-    display: none;
-  }
-}
-
