@@ -1,0 +1,10 @@
+.mainnav .container .leftnavlist{
+  display: none;
+}
+.main{
+  margin-bottom: 30px;
+  font-family: "Microsoft YaHei";
+}
+.main p{
+  margin-top: 20px;
+}

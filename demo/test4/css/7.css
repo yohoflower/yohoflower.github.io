@@ -1,0 +1,35 @@
+.mainnav .container .leftnavlist{
+  display: none;
+}
+.main{
+  margin-bottom: 30px;
+}
+.main .nav{
+  margin-bottom: 30px;
+}
+.main .nav ul li{
+  float: right;
+  list-style: none;
+  text-align: center;
+}
+.main .nav ul li a{
+  text-decoration: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main .nav ul li a:link,a:visited{
+  color: #000;
+}
+.main .nav ul li a:hover,a:active{
+  color: #fff;
+  background-color: #ff9000;
+}
+.main .case .thumbnail{
+  border: hidden;
+}
+.main .case p{
+  text-align: center;
+}
