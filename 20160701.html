@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <style>
+        .s_top_content .s_top_content_index .s_header{
+            font-size: 24px;
+            color: #333333;
+            line-height: 30px;
+            margin: 20px 0 20px 30px;
+            float: left;
+        }
+
+        .s_top_content .s_top_content_index .s_select_index{
+            font-size: 24px;
+            color: #333333;
+            line-height: 30px;
+            margin: 20px auto;
+            float: left;
+            max-width: 620px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .s_top_content .s_top_content_index .s_select_index a{
+            color: #333333;
+        }
+        .s_top_content .s_top_content_index .s_select_index:after {
+            background: url(icon_group01.png) no-repeat -39px center;
+            content: "";
+            display: inline-block;
+            height: 30px;
+            margin-left: 10px;
+            vertical-align: top;
+            width: 8px;
+        }
+        .s_top_content .s_top_content_index .s_select{
+            background: #fff;
+            width: 250px;
+            max-height: 182px;
+            /*overflow-y: scroll;*/
+            overflow: hidden;
+            border: 1px solid #e5e5e5;
+            position: absolute;
+            top: 115px;
+            left: 30px;
+            display: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .s_top_content .s_top_content_index .s_select .s_wrapList{
+            width: 250px;
+            height: 180px;
+        }
+        .s_top_content .s_top_content_index .s_selectBox{
+            width: 230px;
+        }
+        .s_top_content .s_top_content_index .s_selectBox li{
+            margin-left: 20px;
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            padding-bottom: 15px;
+            height: 15px;
+            line-height: 15px;
+        }
+        .s_top_content .s_top_content_index .s_selectBox li:hover{
+            background-color: #fff;
+        }
+        .s_top_content .s_top_content_index .s_selectBox li a{
+            display: block;
+            color: #666666;
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .s_top_content .s_top_content_index .s_selectBox li a:hover{
+            font-weight: bold;
+        }
+        .s_top_content .s_top_content_index .s_wrapList .s_scrollTopOuter{
+            right: 10px;
+            bottom: 30px;
+        }
+        .s_top_content .s_top_content_index .s_wrapList .s_scrollTop{
+            right: 7px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<!--上部内容区-->
+<div class="s_top_content">
+    <div class="s_top_content_index">
+        <p class="s_header">问答月刊</p>
+        <span class="s_select_index"><a href="javascript:;">第12期</a></span>
+        <!--选择往期问答月刊-->
+        <div class="s_select js_scrollFather3 FreeManageEdit">
+            <div class="sky_warpper s_wrapList">
+                <div class="scrollTest s_selectBox">
+                    <div>
+                        <ul>
+                            <li class="detail"><a href="javascript:;">第12期：洗衣机保养</a></li>
+                            <li class="detail"><a href="javascript:;">第11期：电脑操作问题</a></li>
+                            <li class="detail"><a href="javascript:;">第10期：长的健康才能吃的放心第10期：长的健康才能吃的放心</a></li>
+                            <li class="detail"><a href="javascript:;">第09期：海尔净化魔方</a></li>
+                            <li class="detail"><a href="javascript:;">第08期：电商直购专题</a></li>
+                            <li class="detail"><a href="javascript:;">第07期：3D体验</a></li>
+                            <li class="detail"><a href="javascript:;">第06期：。。。</a></li>
+                            <li class="detail"><a href="javascript:;">第05期：。。。</a></li>
+                            <li class="detail"><a href="javascript:;">第04期：。。。</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sky_scrollTopOuter s_scrollTopOuter" style="display: block;"></div>
+                <div class="sky_scrollTop s_scrollTop" style="display: block;">
+                    <span style="height:10px;"></span>
+                    <span style="height:20px;background-color:#005aab;" class="autoHeight"></span>
+                    <span style="height:10px;"></span>
+                </div>
+            </div>
+        </div>
+        <!--选择往期问答月刊 end-->
+    </div>
+</div>
+<!--上部内容区end-->
+<script type="text/javascript">
+    <!-- 点击展示往期问答月刊 -->
+    $('body').on('click', function () {
+        $('.s_select').hide();
+    })
+
+    $('.s_select_index').on('click', function () {
+        $('.s_select').show();
+        return false;
+    })
+
+    $('.s_selectBox ul li').on('click', function () {
+        $('.s_select_index').find('a').html($(this).find('a').html());
+        $(this).parent('ul').parent().parent().parent().parent().hide();
+        return false;
+    })
+    <!-- 点击展示往期问答月刊end -->
+</script>
+</body>
+</html>
